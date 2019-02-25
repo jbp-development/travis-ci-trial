@@ -10,6 +10,10 @@ app.get("/travis", (req, res) => {
     res.send("Using travis");
 });
 
+app.get("/newstuff", (req, res) => {
+    res.send("Hello world!")
+});
+
 const server = app.listen(3000, () => {
   console.log('App running on port 3000');
 });
